@@ -8,6 +8,7 @@ MAX_TITLE_LENGTH = 256
 
 class BaseModel(models.Model):
     """Абстрактная модель с общими полями для всех моделей блога."""
+
     is_published = models.BooleanField(
         default=True,
         verbose_name='Опубликовано',
